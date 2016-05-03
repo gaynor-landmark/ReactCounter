@@ -12,8 +12,8 @@ app.use(express.static(path.join(__dirname, '../public')))
 //app.use(require('body-parser').urlencoded({ extended: true }))
 
 if (require.main === module) {
-  var port = process.env.PORT || 3005
+  var port = process.env.PORT || 3006
   server.listen(port, function () {
-    console.log('Server is running on port 3005!')
+    console.log('Server is running on port 3006!')
   })
 }
