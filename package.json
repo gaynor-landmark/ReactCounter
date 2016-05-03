@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:server": "nodemon ./server/index.js",
     "dev:watch": "watchify src/index.js -o public/bundle.js -t [ babelify --presets [ es2015 react stage-0 ] ] -dv",
-    "dev:live-reload": "live-reload public/ --port 3005 --delay=1000",
     "start": "NODE_ENV=development npm-run-all -p dev:*"
   },
   "repository": {
@@ -27,9 +26,12 @@
     "babel-preset-stage-0": "^6.5.0",
     "babelify": "^7.3.0",
     "cors": "^2.7.1",
+    "domready": "^1.0.8",
     "express": "^4.13.4",
     "http": "0.0.0",
     "path": "^0.12.7",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
     "watchify": "^3.7.0"
   },
   "devDependencies": {
